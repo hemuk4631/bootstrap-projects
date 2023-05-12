@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>caped</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/e8c6b142fe.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+    <section id="title">
+        <div class="container-fluid">
+            <!-- Nav Bar -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand nav-text" href="http://127.0.0.1:5500/index.html">
+                    <i class="fa-solid fa-hat-cowboy"></i> caped
+                </a>
+                <div class="nav-seach">
+                    <form class="form-inline my-2 my-lg-0">
+                        <div class="input-group">
+                            <input class="form-control form-control-lg mr-sm-2" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button class="btn btn-success btn-lg my-2 my-sm-0" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </form>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+
+
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item dropdown-item">
+                            <a class="nav-link nav-text" href="">contacts</a>
+                        </li>
+                        <li class="nav-item dropdown-item">
+                            <a class="nav-link nav-text" href="">products</a>
+                        </li>
+                        <li class="nav-item dropdown-item ">
+                            <a class="nav-link nav-text" href="">about</a>
+                        </li>
+                        <li class="nav-item dropdown-item ">
+                            <a class="nav-link nav-text" href=""><i class="fa-solid fa-cart-shopping"></i>cart</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+
+            <!-- Title -->
+            <div class="row">
+                <div>
+
+                    <div class="col-lg-6">
+                        <h2 class="welcome-phrase">Welcome to Caped, your ultimate destination for buying stylish
+                            and
+                            high-quality caps online. Browse our wide collection of caps for men, women, and kids,
+                            featuring the latest trends and styles.</h2>
+                        <button type="button" onclick="scrollToSection('#models-styles')"
+                            class="btn btn-success btn-lg shop-button">Shop men</button>
+                        <button type="button" onclick="scrollToSection('#models-styles')"
+                            class="btn btn-success btn-lg shop-button">Shop women</button>
+                        <button type="button" onclick="scrollToSection('#models-styles')"
+                            class="btn btn-success btn-lg shop-button">Shop Kids</button>
+                    </div>
+
+
+                </div>
+            </div>
+    </section>
+
+
+   
+
+
+    <!-- Trending products -->
+
+
+    <section id="trending-products">
+        <h2 class="section-title">Latest Trending Products</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                        <!-- Carousel indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for carousel items- -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="/images\courasel-cap\brown hat.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Classic brown men's hat</h4>
+                                                <p class="item-price"><strike>₹400.00</strike> <span>₹369.00</span>
+                                                </p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="/images/cap2red.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Grey border red cap</h4>
+                                                <p class="item-price"><strike>₹25.00</strike> <span>₹23.99</span>
+                                                </p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="/images\courasel-cap\girl-wearing-cap.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Stylish women's hat</h4>
+                                                <p class="item-price"><strike>₹899.00</strike> <span>₹649.00</span>
+                                                </p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-half-o"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="/images\courasel-cap\pink-ladies-hat.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Pink women's hat</h4>
+                                                <p class="item-price"><strike>₹315.00</strike> <span>₹250.00</span>
+                                                </p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i>
+                                                        </li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="/images\courasel-cap\black-cap.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Solid black cap</h4>
+                                                <p class="item-price"><strike>₹289.00</strike> <span>₹269.00</span>
+                                                </p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="/images\courasel-cap\green-cap.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Premium green cap</h4>
+                                                <p class="item-price"><strike>₹600.00</strike> <span>₹400.00</span>
+                                                </p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-half-o"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="/images\courasel-cap\brown-ladies-hat.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Premium women's hat</h4>
+                                                <p class="item-price"><strike>₹109.00</strike> <span>₹99.00</span>
+                                                </p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i>
+                                                        </li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="/images\courasel-cap\white-round.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>White round cap</h4>
+                                                <p class="item-price"><strike>₹599.00</strike> <span>₹569.00</span>
+                                                </p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="/images\courasel-cap\green-cap.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Stylish green cap</h4>
+                                                <p class="item-price"><strike>₹369.00</strike> <span>₹349.00</span>
+                                                </p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="/images\courasel-cap\lightblue-cap.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Simple lightblue cap</h4>
+                                                <p class="item-price"><strike>₹315.00</strike> <span>₹250.00</span>
+                                                </p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="/images\courasel-cap\black-hat.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Forest black hat</h4>
+                                                <p class="item-price"><strike>₹450.00</strike> <span>₹418.00</span>
+                                                </p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="/images\courasel-cap\round-khachi.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Round bambo hat</h4>
+                                                <p class="item-price"><strike>₹350.00</strike> <span>₹330.00</span>
+                                                </p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Carousel controls -->
+                        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+  
+
+     <!-- Features -->
+
+     <section id="features">
+        <h2 class="section-title">Features</h2>
+        <div class="features-box">
+            <div class="row">
+                <div class="col-lg-3 features-col">
+                    <i class="icon fa-solid fa-crown fa-4x"></i>
+
+                    <h3>Premium quality fabric.</h3>
+                    <img class="feature-img" src="/images/fabric-cap.jpg" alt="">
+                    <p>Gives a premium feel having varity of premium fabrics in each product.</p>
+                </div>
+
+                <div class="col-lg-3 features-col">
+                    <i class="icon fa-solid fa-hand-fist fa-4x"></i>
+                    <h3>Robust design.</h3>
+                    <img class="feature-img" src="/images/featurAmz.jpg" alt="">
+                    <p>Symmetrical design with flexible hats, comfortable and lightweight with Solid colour
+                        printing.
+                    </p>
+                </div>
+
+                <div class="col-lg-3 features-col">
+                    <i class="icon fa-regular fa-face-kiss-wink-heart fa-4x"></i>
+                    <h3>Custum designs for uniqness.</h3>
+                    <img class="feature-img" src="/images/custom-cap.jpg" alt="">
+                    <p>You can cutomize your cap the way you want to style.</p>
+                </div>
+
+                <div class="col-lg-3 features-col">
+                    <i class="icon fa-solid fa-hands-bubbles fa-4x"></i>
+                    <h3>Washable.</h3>
+                    <img class="feature-img" src="/images/featurAmz.jpg" alt="">
+                    <p>Easily washable both by machine and hands without damaging the fabric and colour.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+
+    </section>
+
+    <!-- model-style -->
+
+    <section id="models-styles">
+        <h2 class="section-title">Pick the style which suits you best.</h2>
+        <div class="models-heading">
+
+            <p>We have stylish caps and hats for everyone choose yours.</p>
+        </div>
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">For handsome men</h3>
+                        <div class="model-img">
+                            <img class="card-img" src="/images/model-style/young-man-adjusts-his-baseball-cap.jpg"
+                                alt="men-image">
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-lg btn-dark" type="button">Shop men</button>
+                        </div>
+                        <!-- <a href="#" class="btn btn-dark">Sign Up</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">For stylish women</h3>
+
+                        <div class="model-img">
+                            <img class="card-img"
+                                src="/images/model-style/person-wearing-a-suede-hat-and-black-outfit.jpg"
+                                alt="women-image">
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-lg btn-dark " type="button">Shop women</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">For amazing kids</h3>
+
+                        <div class="model-img">
+                            <img class="card-img" src="/images/model-style/small-boy-in-white-shirt-and-grey-hat.jpg"
+                                alt="kid-image">
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-lg btn-dark" type="button">Shop kids</button>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!-- <h2>Free</h2>
+    <p>5 Matches Per Day</p>
+    <p>10 Messages Per Day</p>
+    <p>Unlimited App Usage</p>
+    <button type="button">Sign Up</button> -->
+
+
+
+
+
+
+
+    </section>
+
+
+    <!-- Call to Action -->
+
+    <section id="cta">
+        <div class="foot-items">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://127.0.0.1:5500/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Orders</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <p class="footer-text">Download our mobile app and start shopping now.</p>
+                            <div class="button-div">
+                                <button type="button" class="btn btn-dark btn-sm download-button"><i
+                                        class="fa-brands fa-google-play"></i>Download</button>
+                                <button type="button" class="btn btn-outline-light btn-sm download-button"><i
+                                        class="fa-brands fa-apple"></i>Download</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="social-icons">
+                                <li><a href="https://www.facebook.com/hemuk4631"><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li><a href="https://twitter.com/HemantK60229375"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li><a href="https://www.instagram.com/hemuk4631/"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+
+
+
+        <!-- <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="footer-logo">
+                <i class="fa-solid fa-hat-cowboy"></i>
+              </div>
+              <p>&copy; 2023 Your Company Name. All rights reserved.</p>
+            </div>
+            <div class="col-md-6">
+              <div class="footer-apps">
+                <button type="button" class="btn btn-dark btn-lg download-button"><i class="fa-brands fa-google-play"></i>download</button>
+                <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fa-brands fa-apple"></i>download</button>
+              </div>
+              <ul class="list-inline text-md-right">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+       -->
+    </section>
+
+
+
+    <!-- Footer -->
+
+    <footer id="footer">
+
+        <p class="copyright-text">© Copyright caped 2023.</p>
+
+    </footer>
+    <script src="index.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+    <script>
+        $('.carousel').carousel();
+    </script>
+
+</body>
+
+</html>

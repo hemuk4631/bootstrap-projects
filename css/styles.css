@@ -1,0 +1,349 @@
+body{
+    font-family: "Montserrat";
+}
+#title{
+    
+    background-size:cover;
+    width: 100%;
+    
+    background-image: url("/images/fashion-toronto-watch.jpg");  background-repeat: no-repeat;
+  
+    background-position:down;
+
+
+}
+.container-fluid{
+    padding:3% 5% 10%;
+    
+    
+}
+ .navbar{
+    
+    
+    margin-bottom:8%
+ }
+
+.navbar-brand{
+    font-size: 2rem;
+}
+
+/* .nav-search{
+    position:absolute;
+} */
+
+ form .input-group{
+position:relative;
+left:8%;
+    
+}
+
+
+.nav-item{
+    
+    padding:0px 10px;
+}
+.nav-text{
+    color:#dde7e3;
+    /* color:#2b7fd5; */
+    font-weight:600;
+}
+h2.welcome-phrase{
+    color:#60ae63;
+     font-size :1.5rem;
+     line-height: 1.5;
+     font-weight: 900;
+     margin-bottom:10%;
+     line-height: 1.5;
+     
+    
+}
+
+h2.section-title{
+    background-color: #198754;
+    color:#dde7e3;
+    padding:1% 0;
+    margin-bottom:2%;
+    font-weight: 500;
+    font-size :1.5rem;
+   
+}
+.download-button{
+    margin:5% 3% 5% 0;
+}
+
+    
+
+#features{
+    background-color: #fff;
+    position:relative;
+    text-align: center;
+
+}
+#features, #trending-products, #models-styles{
+    padding:7% 10%;
+}
+/* .features-box{
+    padding:7% 15%;
+  
+} */
+
+.features-col{
+    text-align:center;
+    line-height: 2;
+    padding:0 5%0 5%;
+    /* margin-top:7% */
+}
+
+img.feature-img{
+    position:relative;
+    width:100%;
+    size:cover;
+    transition: transform 0.3s ease-in-out;
+    
+}
+img.feature-img:hover{
+    transform: scale(2);
+}
+
+.icon{
+    color:#198754;
+    margin-bottom:1rem;
+    
+    /* padding-bottom:20px; */
+    
+}
+ .icon:hover{
+    color:#198754;
+ }
+
+h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+p{
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+/* #press{
+    background-color: #198754;
+    text-align: center;
+   padding-bottom:10%;
+
+}
+.press-logo{
+    width: 10%;
+    margin:0 3% 0 3%;
+}
+  */
+  #trending-products{
+    text-align: center;
+    /* padding: 5% 15%; */
+    font-family: "Montserrat";
+}
+
+  .carousel {
+    margin: 50px auto;
+   
+}
+.carousel .carousel-item {
+    min-height: 330px;
+    text-align: center;
+    overflow: hidden;
+}
+.carousel .carousel-item .img-box {
+    height: 160px;
+    width: 100%;
+    position: relative;
+}
+.carousel .carousel-item img {  
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+.carousel .carousel-item h4 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.carousel .carousel-item .btn {
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background:#198754;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin-top: 5px;
+    line-height: 16px;
+}
+.carousel .carousel-item .btn:hover, .carousel .carousel-item .btn:focus {
+    
+    background: #15a05f;
+    
+}
+.carousel .carousel-item .btn i {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.carousel .thumb-wrapper {
+    text-align: center;
+}
+.carousel .thumb-content {
+    padding: 15px;
+}
+.carousel-control-prev, .carousel-control-next {
+    height: 100%;
+    background: none;
+    margin: auto -14%;
+    
+}
+.carousel-control-prev i, .carousel-control-next i {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    margin: -16px 0 0 0;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    color: #198754;
+    text-shadow: none;
+    font-weight: bold;
+}
+.carousel-control-prev i {
+    margin-left: -3px;
+}
+.carousel-control-next i {
+    margin-right: -3px;
+}
+.carousel .item-price {
+    font-size: 13px;
+    padding: 2px 0;
+}
+.carousel .item-price strike {
+    color: gray;
+    margin-right: 5px;
+}
+.carousel .item-price span {
+    color: #198754;
+    font-size: 110%;
+}   
+.carousel .carousel-indicators {
+    bottom: -50px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+    width: 10px;
+    height: 10px;
+    margin: 4px;
+    border-radius: 50%;
+    border-color: transparent;
+    border: none;
+}
+.carousel-indicators li {   
+    background:rgba(0, 0, 0, 0.2);
+}
+.carousel-indicators li.active {    
+    background:#198754;
+}
+.star-rating li {
+    padding: 0;
+}
+.star-rating i {
+    font-size: 14px;
+    color: #ffc000;
+} 
+   ol.carousel-indicators{
+    list-style: none;
+   }
+    #models-styles{
+        text-align: center;
+       
+        font-family: "Montserrat";
+    }
+    .model-img{
+        padding-bottom:3%;
+    }
+
+    .row{
+        margin-top:10%;
+    }
+
+    .card{
+        background-color: #198754;
+        color:#fff;  
+         
+    }
+
+    .card-text{
+        color:#fff
+    }
+
+  
+   
+    
+    
+
+   
+    #cta{
+        text-align: center;
+        background-color: #198754;
+        padding-top:7%;
+        color:#fff;
+        margin-top:10%;
+    }
+
+    #footer{
+        background-color: #198754;
+        text-align:center;
+        padding-bottom:3%;
+        font-family: 'Montserrat';
+    }
+    .shop-button{
+        margin:5% 1% 5% 0;
+
+        
+    }
+    .copyright-text{
+        color:#fff;
+    }
+ .list-inline{
+    padding:3% 0;
+ }
+.social-icons{
+    
+    display:flex;
+    gap: 5%;
+    margin-left:40%;
+
+
+}
+ul{
+    list-style: none;
+}
+.download-button {
+    width: 120px;
+    height: 30px; 
+    font-size: 12px; 
+  }
+  .foot-items .social-icons i,.foot-items .nav-link{
+    color:#fff;
+  }
+  .foot-items .social-icons i:hover,.foot-items .nav-link:hover{
+    color:#000;
+  }
+  .foot-items .row{
+    margin-top:1.5%;
+  }
+  .fa-brands{
+    margin-right:7%;
+  }
